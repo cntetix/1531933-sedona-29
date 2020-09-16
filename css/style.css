@@ -1,137 +1,182 @@
-:root { 
-    --basic-white: #ffffff;
-    --basic-extra-light:rgba(255, 255, 255, 0.9);
-    --basic-neutral-lighten: #F2F2F2;
-    --basic-neutral: #EEEEEE; 
-    --basic-light:#81B3D2;
-     --basic-extra-dark: #000000;
-     --basic-dark-lighten: #333333;
-     --basic-special: #766357;
- 
-     --basic-neutral-darken:#ABABAB;
-     --basic-neutral-extra-dark:#6A6A6A;
-     --basic-neutral-dark: #A9A9A9;
-     --basic-neutral-light:#CACACA;
-     --basic-neutral-extra-light: #EBEBEB;
-     --basic-neutral-special:#E5E5E5;
-     --basic-light-darken: #669EC0;
-     --basic-light-dark: #5496BD;
+      :root { 
+          --basic-white: #ffffff;
+          --basic-extra-light:rgba(255, 255, 255, 0.9);
+          --basic-neutral-lighten: #F2F2F2;
+          --basic-neutral: #EEEEEE; 
+          --basic-light:#81B3D2;
+          --basic-extra-dark: #000000;
+          --basic-dark-lighten: #333333;
+          --basic-special: #766357;
+      
+          --basic-neutral-darken:#ABABAB;
+          --basic-neutral-extra-dark:#6A6A6A;
+          --basic-neutral-dark: #A9A9A9;
+          --basic-neutral-light:#CACACA;
+          --basic-neutral-extra-light: #EBEBEB;
+          --basic-neutral-special:#E5E5E5;
+          --basic-light-darken: #669EC0;
+          --basic-light-dark: #5496BD;
 
-     --basic-special-darken: #604E43;
-     --basic-special-dark: #503E33;
-}
-    
-    
-     body{
-        min-width: 1200px;
-        margin: 0;
-        padding: 0;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 21px;
-        background-color: var(--basic-white);
-        color: var(--basic-extra-dark);
-        text-transform: uppercase;
+          --basic-special-darken: #604E43;
+          --basic-special-dark: #503E33;
       }
+    
+    
+          body{
+            min-width: 1200px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 21px;
+            background-color: var(--basic-white);
+            color: var(--basic-extra-dark);
+              }
 
-        a{
+          a{
             text-decoration: none;
-        }
-        ul{
+          }
+          
+          .main-nav{
+            line-height: 26px; 
+          }
+
+          .main-header-logo{
+            background-color: var(--basic-light);
+          }
+
+          .nav-list, .features-list, .features-sublist{
             list-style: none;
-        }
-
-        .main-nav{
-          line-height: 26px;
-        
-        }
-        .main-header-logo{
-          background-color: var(--basic-light);
-        }
-     
-      .nav-list-link a{
-          font-weight: bold;
-          line-height: inherit;
-          list-style:none;
-          color: var(--basic-extra-dark); 
+          }
           
-      }
-        .section-about h2{
-          font-style: normal;
-          font-weight: bold;
-          font-size: 21px;
-          line-height: 26px;
-          text-align: center;
+          .nav-list-link a, .nav-list-link-item a{
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            line-height: inherit;
+            list-style:none;
+            text-transform: uppercase;
+            color: var(--basic-extra-dark); 
+              
+          }
+
+          .nav-list-link-item a:hover{
+            color: var(--basic-light);
+          }
+
+          .nav-list-link-item a:active{
+            color: var(--basic-extra-dark);
+            opacity: 0.3;
+          }
+
+          .nav-list-link-item a:visited{
+            color: var(--basic-special);
+          }
+
+          .nav-list .nav-list-link info-link:hover{
+            color: var(--basic-light);
+          }
+
+          .section-about h2{
+            font-family: 'PT Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 26px;
+            text-transform: uppercase;
+            text-align: center;
+            
+          }
+
+          .section-about p{
+            font-family: 'PT Sans', sans-serif;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #333333;
+          }
+
+          .features-item{
+            background-color: var(--basic-light);
+
+          }
+
+          .features-item h3{
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            font-size: 21px;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--basic-white);
+          }        
           
-        }
-        .section-about p{
-          line-height: 26px;
-          text-align: center;
-          color: #333333;
-        }
-        .features-item{
-          background-color: var(--basic-light);
+          .features-item p{
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--basic-white);
+          }
 
-        }
+          .features-sublist{
+            background-color: var(--basic-white);
+          }
 
-        .features-item h3{
-          font-weight: bold;
-          font-size: 21px;
-          text-align: center;
-          color: var(--basic-white);
-        }        
-        
-        .features-item p{
-          text-align: center;
-          color: var(--basic-white);
-        }
+          .features-sublist h3, .benefits-item h3 {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            font-size: 21px;
+            text-align: center; 
+            text-transform: uppercase;
+            color: var(--basic-extra-dark);         
+          }
 
-        .features-sublist{
-          background-color: var(--basic-white);
-        }
+          .features-sublist p, .benefits-item p, .section-booking p {
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--basic-dark-lighten);       
+          }
 
-        .features-sublist h3, .benefits-item h3 {
-          font-weight: bold;
-          font-size: 21px;
-          text-align: center; 
-          color: var(--basic-extra-dark);         
-        }
+          .benefits-item{
+            background-color: var(--basic-neutral);
+          }
 
-        .features-sublist p, .benefits-item p, .section-booking p {
-          text-align: center;
-          color: var(--basic-dark-lighten);       
-        }
+          .section-booking h2{
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+          }
 
-        .benefits-item{
-          background-color: var(--basic-neutral);
-        }
+          .page-footer{
+            background-color: var(--basic-extra-light);
+          }
 
-        .section-booking h2{
-          font-weight: bold;
-          font-size: 30px;
-          line-height: 24px;
-          text-align: center;
-        }
+          .footer-contacts a{
+            font-family: 'PT Sans', sans-serif;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--basic-extra-dark); 
+          }
 
-        .page-footer{
-          background-color: var(--basic-extra-light);
-        }
-        .footer-contacts a{
-          font-weight: bold;
-          font-size: 21px;
-          line-height: 26px;
-          text-align: center;
-          color: var(--basic-extra-dark); 
-       }
+          .footer-socials a{
+            background-color: var(--basic-light);   
+          }
 
-        .footer-socials a{
-          background-color: var(--basic-light);   
-        }
-
-        .footer-copyright p{
-          line-height: 26px;
-          text-align: center;
+          .footer-socials a:hover{
+            background-color: var(--basic-light-darken);
+          }
           
-        }
+          .footer-socials a:active{
+            background-color: var(--basic-light-dark);
+          }
+
+          .footer-copyright p{
+            font-family: 'PT Sans', sans-serif;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase; 
+          }
