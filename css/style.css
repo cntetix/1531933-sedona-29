@@ -23,6 +23,7 @@
     
     
           body{
+            font-family: 'PT Sans', sans-serif;
             min-width: 1200px;
             font-size: 14px;
             font-style: normal;
@@ -169,7 +170,7 @@
           .footer-socials a:hover{
             background-color: var(--basic-light-darken);
           }
-          
+
           .footer-socials a:active{
             background-color: var(--basic-light-dark);
           }
