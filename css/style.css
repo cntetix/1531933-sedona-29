@@ -41,10 +41,7 @@
             line-height: 26px; 
           }
 
-          .main-header-logo{
-            background-color: var(--basic-light);
-          }
-
+         
           .nav-list, .features-list, .features-sublist{
             list-style: none;
           }
